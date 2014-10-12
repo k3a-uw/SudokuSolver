@@ -1,7 +1,8 @@
 SudokuSolver
 ============
 
-An intelligent NxN Sudoku Solver
+An intelligent NxN Sudoku Solver designed by Kevin E. Anderson for the sole
+purpose of the utility of programming.
 
 Overview
 --------
@@ -48,46 +49,42 @@ MVC Framework
 ---------
 ### Model
 The model will consist of several PHP classes:
-1. SudokuBoard
-2. SudokuCell
-3. SudokuMove*
-4. CellConfidence*
+> 1. SudokuBoard
+> 2. SudokuCell
+> 3. SudokuMove*
+> 4. CellConfidence*
 
- *Simple Data Structure
+
+ *_Simple Data Structure_
  
 ### View
 The view will be constructed using BootStrap 3.2.0.  Some helper classes may
 be constructed to draw certain aspects of the page.  There will be several
 containers that will be place holders for results of AJAX Calls.
-1. ViewBoard
-2. ViewCell
-3. ViewStatus
-4. ContainerBoard
-5. ContainerStatus
+> 1. ViewBoard
+> 2. ViewCell
+> 3. ViewStatus
+> 4. ContainerBoard
+> 5. ContainerStatus
 
 ### Controller
 The controller will very simple, as there aren't very many ways to manipulate
 the model of a simple Sudoku puzzle.  Essentially be a series of AJAX calls to
 check certain moves or to update the board as the solver works to solve the
 problem.
-1. SendMove
-2. UpdateBoard
-3. UpdateStatus
+> 1. SendMove
+> 2. UpdateBoard
+> 3. UpdateStatus
 
 Folder Structure
 ----------------
-root/
-
---bootstrap-3.2.0-dist/  [includes bootstrap framework]
-
-----css/
-
-----fonts/
-
-----js
-
---src/
-
-----class/    [includes all class files]
-
-----ajax/     [includes all ajax response files]
+    root/
+    \--bootstrap-3.2.0-dist/  [contains bootstrap framework]
+       \--css/
+       \--fonts/
+       \--js
+    \--inc/                   [contains includes and css]
+       \--ajax/                [includes all ajax response files]
+       \--class/               [includes all class files]
+       \--css/                 [includes all custom css]
+    \--index.php              [main page for user interaction]
