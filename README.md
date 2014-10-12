@@ -77,10 +77,17 @@ problem.
 Folder Structure
 ----------------
 root/
+
 --bootstrap-3.2.0-dist/  [includes bootstrap framework]
+
 ----css/
+
 ----fonts/
+
 ----js
+
 --src/
+
 ----class/    [includes all class files]
+
 ----ajax/     [includes all ajax response files]
